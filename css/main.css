@@ -1,0 +1,23 @@
+body {
+  background-color: rgba(179, 236, 236, 0.07);
+}
+.heder {
+  color: rgba(128,32,96);
+  /* rgba(50, 200, 255); */
+}
+/* .li {
+  margin-top: 400px;
+  margin-bottom: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+} */
+#gallery{
+
+  /* width: 320px; */
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-content: center;
+
+
+}
