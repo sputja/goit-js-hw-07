@@ -11,6 +11,4 @@ const spamOutname = document.querySelector("#name-output");
 inputName.addEventListener("input", (evt) => {
   inputName.value === "" ? spamOutname.textContent = "незнакомец" : spamOutname.textContent = evt.target.value;
   });
-// inputName.addEventListener("keydown", evt => {
-//   inputName.value === "" ? spamOutname.textContent = "незнакомец" : spamOutname.textContent = evt.target.value;
-// });
+

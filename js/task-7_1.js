@@ -10,50 +10,15 @@
 Категория: Животные
 Количество элементов: 4
 
-const categories = document.querySelectorAll('li.item');
-categories.forEach((category) => {
-  const title = category.querySelector('h2');
-  const elm = title.querySelector('li');
-
 */
-const categories = document.querySelectorAll('h2');
-// const categories1 = categories.querySelectorAll('li');
-console.log( "Количество категорий:", categories.length);
+const fullLiRef = document.querySelectorAll('.item');
 
-categories.forEach((elm) => console.log("Категория:",elm.innerText));
+console.log( "Количество категорий:", fullLiRef.length);
+fullLiRef.forEach(categories => {
+  const h2Ref = categories.querySelector('h2');
+  const liRef = categories.querySelectorAll('li')
+  console.log(`Категория: ${h2Ref.textContent}`);
+  console.log(`Количество элементов: ${liRef.length}`);
+});
 
 
-// console.log( "Категория:", categories.forEach((elm, index) => elm)
-// , "Категория:",categories[1].innerText,
-// "Категория:",categories[2].innerText
-// // categories1
-// // categories1[1].innerText
-// );
-// categories.forEach((category) => {
-//   const title = category.querySelector('h2');
-//   const elm = elem.querySelector('li.item');
-//   console.log( "количество категорий:", categories, title);
-//   // return title ;
-// });
-// console.log( "количество категорий:", categories.length, "количество :" ,title);
-
-//   const title = document.querySelectorAll("h2");
-// const item = document.querySelectorAll("li.item");
-// console.log("количество категорий:", title.length);
-// console.log("количество :", item);
-
-// const list = document.querySelectorAll("li");
-
-// const names =title.map(name => name);
-// console.log(list.lastElementChild);
-// console.log(h2.querySelectorAll(elm));
-
-// ========= querySelectorAll =========
-// const list = document.querySelectorAll('li');
-
-// list.forEach(item => console.log(item));
-
-// ========= parentNode =========
-// const firstLi = document.querySelector("li");
-
-// console.log(firstLi.lastElementChild);

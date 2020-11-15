@@ -34,7 +34,7 @@ inputRef.selectionEnd === 6
 #validation-input.invalid {
   border-color: #f44336;
 }
-
+*/
 
 
 const inputRef = document.querySelector("#validation-input");
