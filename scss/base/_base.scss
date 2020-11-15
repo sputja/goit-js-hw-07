@@ -27,8 +27,8 @@ ul {
 li {
   margin-top: 5px;
 }
-#counter{
-margin-bottom: 40px;
+#counter {
+  margin-bottom: 40px;
 }
 .img {
   display: block;
@@ -37,22 +37,30 @@ a {
   text-decoration: none;
 }
 
-
 #gallery {
   display: flex;
   flex-direction: column;
   justify-self: center;
   align-content: center;
-
-  #validation-input {
-    border: 3px solid #bdbdbd;
-  }
-
-  #validation-input.valid {
-    border-color: #4caf50;
-  }
-
-  #validation-input.invalid {
-    border-color: #f44336;
-  }
 }
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+// #validation-input_valid {
+//   border-color: #4caf50;
+// }
+// #validation-input_invalid {
+//   border-color: #f44336;
+// }
+#validation-input.valid {
+  border-color: #4caf50;
+}
+#validation-input.invalid {
+  border-color: #f44336;
+}
+// .valid {
+//   border-color: #4caf50;
+// }
+// .invalid {
+//   border-color: #f44336;
+// }

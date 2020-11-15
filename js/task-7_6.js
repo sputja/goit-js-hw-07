@@ -12,6 +12,17 @@
 Если введено подходящее количество, то border инпута становится зеленым, если неправильное - красным.
 Для добавления стилей, используй CSS-классы valid и invalid.
 
+inputRef.selectionEnd === 6
+    ? (inputRef.id = "validation-input_valid")
+    : (inputRef.id = "validation-input_invalid");
+#validation-input_valid {
+  border-color: #4caf50;
+}
+
+#validation-input_invalid {
+  border-color: #f44336;
+}
+
 #validation-input {
   border: 3px solid #bdbdbd;
 }
@@ -23,4 +34,22 @@
 #validation-input.invalid {
   border-color: #f44336;
 }
-*/
+
+
+
+const inputRef = document.querySelector("#validation-input");
+inputRef.addEventListener("blur", () => {
+  if (inputRef.selectionEnd === Number(inputRef.dataset.length)) {
+    inputRef.classList.add("valid");
+    inputRef.classList.remove("invalid");
+  } else {
+    inputRef.classList.add("invalid");
+    inputRef.classList.remove("valid");
+  }
+  console.log(
+    "Потеря фокуса",
+    inputRef,
+    "Длина строки",
+    inputRef.selectionEnd
+  );
+});

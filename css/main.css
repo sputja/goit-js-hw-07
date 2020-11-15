@@ -386,15 +386,15 @@ a {
   align-content: center;
 }
 
-#gallery #validation-input {
+#validation-input {
   border: 3px solid #bdbdbd;
 }
 
-#gallery #validation-input.valid {
+#validation-input.valid {
   border-color: #4caf50;
 }
 
-#gallery #validation-input.invalid {
+#validation-input.invalid {
   border-color: #f44336;
 }
 /*# sourceMappingURL=main.css.map */
