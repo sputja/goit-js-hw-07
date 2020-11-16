@@ -45,7 +45,6 @@ const images = [
   },
 ];
 const liGallery = document.querySelector('#gallery');
-console.log(liGallery);
 const createImg = ({url, alt}) => {
   const itemCreate = document.createElement("li");
   const itemImg = document.createElement('img')
