@@ -46,10 +46,4 @@ inputRef.addEventListener("blur", () => {
     inputRef.classList.add("invalid");
     inputRef.classList.remove("valid");
   }
-  console.log(
-    "Потеря фокуса",
-    inputRef,
-    "Длина строки",
-    inputRef.selectionEnd
-  );
 });
