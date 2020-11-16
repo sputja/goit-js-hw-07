@@ -44,24 +44,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const item = document.createElement('li')
-const itemImg = document.createElement('img')
-itemImg.setAttribute('src', images[0].url);
-itemImg.setAttribute('alt', images[0].alt);
-
-const item1 = document.createElement('li')
-const itemImg1 = document.createElement('img')
-itemImg1.setAttribute('src', images[1].url);
-itemImg1.setAttribute('alt', images[1].alt);
-
-const item2 = document.createElement('li')
-const itemImg2 = document.createElement('img')
-itemImg2.setAttribute('src', images[2].url);
-itemImg2.setAttribute('alt', images[2].alt);
-
 const liGallery = document.querySelector('#gallery');
 console.log(liGallery);
-liGallery.append(item, item1, item2);
-item.appendChild(itemImg);
-item1.appendChild(itemImg1);
-item2.appendChild(itemImg2);
+const createImg = ({url, alt}) => {
+  const itemCreate = document.createElement("li");
+  const itemImg = document.createElement('img')
+itemImg.setAttribute('src', `${url}`);
+itemImg.setAttribute('alt', `${alt}`);
+  return itemCreate, itemImg;
+};
+const listImg = images.map(createImg);
+liGallery.append(...listImg);

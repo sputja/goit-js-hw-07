@@ -308,3 +308,31 @@ const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
  console.log(addLogin(logins, 'dsgfdslkoogles'));
 // 'Логин успешно добавлен!'
+
+// задача 7_2
+
+// ul_ingredients.append(ingredients(...));
+//   document.createElement("ul");
+// const itemIngredients = document.createElement("li");
+// itemIngredients.textContent = ingredients[0];
+// const itemIngredients1 = document.createElement("li");
+// itemIngredients1.textContent = ingredients[1];
+// const itemIngredients2 = document.createElement("li");
+// itemIngredients2.textContent = ingredients[2];
+// const itemIngredients3 = document.createElement("li");
+// itemIngredients3.textContent = ingredients[3];
+// const itemIngredients4 = document.createElement("li");
+// itemIngredients4.textContent = ingredients[4];
+// const itemIngredients5 = document.createElement("li");
+// itemIngredients5.textContent = ingredients[5];
+
+// const ul_ingredients = document.querySelector("#ingredients");
+// console.log(ul_ingredients);
+// ul_ingredients.append(
+//   itemIngredients,
+//   itemIngredients1,
+//   itemIngredients2,
+//   itemIngredients3,
+//   itemIngredients4,
+//   itemIngredients5
+// );
