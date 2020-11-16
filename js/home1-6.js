@@ -336,3 +336,15 @@ const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 //   itemIngredients4,
 //   itemIngredients5
 // );
+
+
+// inputRef.selectionEnd === 6
+//     ? (inputRef.id = "validation-input_valid")
+//     : (inputRef.id = "validation-input_invalid");
+// #validation-input_valid {
+//   border-color: #4caf50;
+// }
+
+// #validation-input_invalid {
+//   border-color: #f44336;
+// }
